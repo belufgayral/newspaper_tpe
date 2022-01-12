@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra Samurái - Miscelánea</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-miscellaneous">
+        <header>            
+            <div class="logo">
+                <a href="index.html"><img class="image-logo" src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="socialmedia-icons">
+                <img class="image-socialmedia" src="images/facebook.png" alt="Facebook">
+                <img class="image-socialmedia" src="images/instagram.png" alt="Instagram">
+                <img class="image-socialmedia" src="images/twitter.png" alt="Twitter">
+            </div>
+        </header>
+        <nav>
+            <div class="nav">
+                    <p class="menu">menú</p>
+                </div>
+                <div class="buttons">
+                    <a class="item btnlink" href="index.html">inicio</a>
+                    <a class="item btnlink" href="mainnews.html">política</a>
+                    <p class="item">guerra</p>
+                    <a class="item btnlink" href="miscellaneous.html">miscelánea</a>
+                    <a class="item btnlink" href="suscription.html">suscripción</a>
+            </div>
+        </nav>    
+    
+        <article class="subcontainer-miscellaneous">
+            <h1>Beneficios y perjuicios de las campanillas de viento</h1>
+            <p class="superscript">Artículo escrito por Ishikawa, Kohaku.</p>
+            <p class="news-body">Aún recuerdo la primera vez que topé con las campanillas de invierno. Las había estado buscando, ciertamente, luego de que mi maestro las mencionara al pasar en una de nuestras infinitas lecciones al resguardo de la nieve, dentro de su pequeña, modesta pero acogedora herbolaria. Él no les otorgaba mayor importancia. Decía que cuentan con propiedades sanadoras, sí, pero que había otras hierbas de mucho mayor alcance y proliferación que cumplían las mismas funciones. Un punto a favor le daré, puesto que no fue fácil comprender su dispersión y preferencias de clima. Seguí pistas falsas durante mucho tiempo hasta que, poco a poco, fui rellenando el mapa con información fidedigna.</p>
+            <img class="image-original" src="images/winter.png" alt="Bosque japonés">
+            <p class="news-body">Heraldos de la primavera, les llaman. Tras las inclemencias del invierno, entre la nieve y la escarcha, el primer bulbo que puja por florecer es el de las campanillas de invierno. Anuncian el cambio de estaciones pese a conservar los tonos sobrios y delicados de los vientos helados que se alejan. Se la ha asociado con la esperanza, con el despertar y el renacer de las cosas. ¿Cómo distinguir una campanilla de invierno? ¿En qué zonas germina? ¿Qué propiedades posee?</p>
+            <p class="news-body">La campanilla de invierno es una planta de bulbo amarronado, de entre uno y dos centímetros. El tallo es recto y sobre el extremo final se arquea, midiendo de diez a treinta centímetros. Las hojas poseen forma de cinta, son largas y de un color verde oscuro. Las flores, usualmente blancas, cuelgan en descenso como campanas péndulas; también se encuentran amarillentas o verdosas. Posee tres tépalos externos de aproximadamente dos centímetros y medio, mientras que los tres internos son más pequeños y poseen una mancha verde en su extremo inferior. Una fragancia ligera se percibe al acercarse, a veces similar a la miel, otras a las almendras. Depende de las abejas que la hayan polinizado.</p>
+            <p class="news-body">La floración tiende a ir de enero a marzo. No es extraño encontrar campanillas de invierno abriéndose paso entre la nieve, poseen una cubierta que las protege durante el proceso. Otro detalle característico para distinguirlas es que, una vez florecidas, la nieve tiende a derretirse a su alrededor, pero ¿el más curioso? No son verdaderamente blancas. Al presionar un tépalo entre los dedos, notarás que pierden su color y se tornan transparentes.</p>
+            <p class="news-body">No estoy seguro en qué época llegó la campanilla de invierno a nuestro país, pero todos los informes que he conseguido parecen indicar que no es autóctona. Gracias a mis viajes concluí que es una planta predominantemente de clima frío. Le agradan los bosques húmedos, las praderas frondosas o las gargantas sombrías. Se presenta incluso en altitudes pronunciadas, calculo que unos dos mil metros. Aquí les dejaré resumida la información específica que he logrado recolectar.</p>
+            <table id="tabla">
+                <tr>
+                    <th>Bosque</th>
+                    <th>Ciudad más cercana</th>
+                    <th>Prefectura</th>
+                    <th>Prod. de arroz (kg)</th>
+                    <th>Id</th>
+                </tr>
+            </table>
+            <form id="form-table">
+                <input class="form" type="text" name="bosque" placeholder="Nombre del bosque" required>
+                <input class="form" type="text" name="ciudad" placeholder="Ciudad más cercana" required>
+                <input class="form" type="text" name="prefectura" placeholder="Prefectura" required>
+                <input class="form" type="number" name="arroz" placeholder="Producción de arroz por año en kilogramos" required>
+                <input class="form" type="text" name="edit" placeholder="(Solo para editar, borrar o filtrar) Para editar/borrar: ingrese el id de la fila deseada. Para filtrar: ingrese la cantidad máxima de arroz. Luego presione el botón que corresponda">
+                <div class="btn-table">
+                    <button type="button" id="btn-post">Agregar</button>
+                    <button type="button" id="btn-post3">Agregar 3</button>                  
+                    <button type="button" id="btn-delete">Borrar una fila</button>
+                    <button type="button" id="btn-put">Editar una fila</button>
+                    <button type="button" id="btn-filter">Filtrar por producción de arroz</button>
+                </div>
+            </form>
+            <p class="news-body">En cuanto a sus propiedades medicinales, he sabido de aldeanos que utilizan flores crudas y las frotan sobre sus rostros para aliviar dolores de cabeza. Entiendo que internarse en bosques espesos por un fin tan vulgar suena casi hilarante, pero en mis años de experiencia e investigación descubrí mejores usos. Preparada en ungüento, por ejemplo, es un excelente calmante muscular ante dolores crónicos o desgarros del trabajo. También he definido que de esta forma calma dolores de cabeza y cervicales con mayor rapidez. Aún estoy investigándolo y por ende no pretendo arribar a conclusiones apresuradas, pero hay algo que me ha llamado mucho la atención y es que creo haber hallado una muy interesante correlación entre el uso de campanillas de invierno y notorias mejorías en pacientes ancianos con problemas de demencia.</p>
+            <p class="news-body">Como mencioné en su momento, las campanillas de invierno ofrecen una amplia variedad de bondades y estoy seguro que aún hay muchas por descubrir. Es un buen momento para reivindicarla y pretender dejarla de lado por otras hierbas y flores de más fácil acceso, creo que es una incorporación necesaria en la botica de cualquier herborista.</p>
+        </article>
+        <footer>
+            <div class="footer-data">
+                <p class="footer-button">Mapa del sitio</p>
+                <p class="footer-button">Ayuda</p>
+                <p class="footer-button">Términos y condiciones</p>
+                <p class="footer-button">Privacidad</p>
+                <p class="footer-button">¿Cómo anunciar?</p>
+            </div>
+                <p>Samurai War ® 2021 | Todos los derechos registrados.</p>
+        </footer>
+    </div>
+    <script src="js/miscellaneous.js"></script>
+</body>
+</html>

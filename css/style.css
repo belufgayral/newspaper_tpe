@@ -1,0 +1,522 @@
+body {
+    background-image: url("images/background-body.jpg");
+    background-repeat: repeat;
+    margin: 0px;
+}
+.container-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "nav"
+    "news"
+    "footer";
+}
+.container-miscellaneous{
+    display: flex;
+    flex-direction: column;
+}
+/*header desde aquí hasta: */
+
+header{
+    background-image: url("images/header.jpg");
+    height: 210px;
+    margin: 0px;
+    padding: 20px;
+    padding-top: 0px;
+    border-bottom: 5px double rgba(128, 128, 128, 0.7);
+    grid-area: header;
+}
+.logo{
+    padding: 15px 0px;
+}
+.image-logo{
+    height: 175px;
+}
+.socialmedia-icons{
+    display: none;
+}
+/* hasta acá el header*/
+/* barra nav desde aquí hasta: */
+nav{
+    grid-area: nav;
+    height: 100%;
+    background-color: rgba(208, 184, 136, 0.9);
+    border-bottom: 5px solid grey;
+    margin-top: 0%;
+    width: 100%;
+}
+.buttons{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.show {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    font-size: 25px;
+    font-family: Garamond;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: rgb(51, 51, 51);
+    text-shadow: 1px 1px 3px rgb(151, 131, 90);
+    padding: 10px 20px 10px 20px;
+    margin: 0%;
+}
+.menu{
+    grid-area: menu;
+    font-size: 25px;
+    font-family: Garamond;
+    font-variant: small-caps;
+    font-weight: bolder;
+    color: rgb(51, 51, 51);
+    border: 0px;
+    margin: 0px;
+    padding: 10px;
+}
+.link, .btnlink:link, .link:link, .btnlink:active, .link:visited{
+    text-decoration: none;
+}
+
+/* hasta acá la barra nav */
+/* desde acá news */
+
+.news {
+    grid-area: news;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "news1"
+    "news2"
+    "miscellaneous"
+    "news3"
+    "news4";
+}
+.subcontainer-miscellaneous{
+    display: flex;
+    flex-direction: column;
+}
+.basic-container, .subcontainer-miscellaneous, .news, .form-container{
+    margin: 10px;
+}
+.form-container{
+    margin: auto;
+    width: 75%;
+    flex-direction: column;
+}
+.form-titles{
+    justify-content: center;
+}
+.basic-container, .subcontainer-miscellaneous, .news1, .news2, .miscellaneous, .news3, .news4, .form-container{
+    background-color: rgba(207, 184, 148, 0.9);
+    border-radius: 10px;
+    margin-top: 8px;
+    padding: 10px;
+    text-align: justify;
+}
+.news1{
+    grid-area: news1;
+}
+.news2{
+    grid-area: news2;
+}
+.miscellaneous{
+    grid-area: miscellaneous;
+}
+.miscellaneous-title{
+    display: inline;
+}
+.miscellaneous-summary{
+    display: flex;
+}
+.news3{
+    grid-area: news3;
+}
+.news4{
+    grid-area: news4;
+}
+.image{
+    width: 100%;
+    margin: 1em 0em;
+}
+.image-snowdrop{
+    width: 40%;
+    height: fit-content;
+    margin-left: 15px;
+}
+.image-hanko{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.image-original{
+    width: 100%;
+}
+.image-mainnews{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.title-date, h1, h2{
+    font-family: Garamond;
+    color: rgb(109, 81, 36);
+    margin: 2px;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    color: rgb(88, 66, 30);
+}
+.center-message{
+    margin: auto;
+}
+.date, .superscript{
+    text-align: right;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-style: italic;
+    color: rgb(109, 81, 36);
+}
+.main-summary, .summary, .news-body, .form-container, table, #newinfo, .quote{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+.summary, .news-body, .form-container, table, #newinfo{
+    font-size: 17px;
+}
+.quote{
+    text-align: center;
+    margin: 10px 40px;
+}
+.map{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.btn-map{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+button, #send, #captcha{
+    text-align: center;
+    border: 2px solid transparent;
+    margin: 8px 4px 0px 0px;
+}
+button:focus, #send:focus, #captcha:focus{
+    outline: none;
+    border: 2px solid rgb(158, 120, 58);
+}
+table{
+    table-layout: fixed;
+    padding: 10px;
+    margin: 15px auto;
+    border-spacing: 4px;
+}
+th, td, button, #send, #captcha{
+    background-color: rgba(109, 81, 36, 0.9);
+    color: rgb(235, 209, 168);
+    padding: 5px 20px 5px 20px;
+    border-radius: 3px;
+}
+td{
+    font-size: 15px;
+    background-color: rgba(109, 81, 36, 0.8);
+}
+.form-container{
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+.form-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 2em;
+}
+.subsform{
+    width: 90%;
+}
+#form-table{
+    width: 80%;
+    margin: auto;
+}
+.btn-table{
+    display: flex;
+    flex-direction: row;
+}
+.form, .submit-button{
+    width: 100%;
+    padding: 6px;
+    margin: 3px 0px 4px 5px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(235, 209, 168);
+}
+.form-text{
+    width: 100%;
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+.input-radio{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.form:focus, .submit-button:active{
+    border: 2px solid rgb(179, 158, 125);
+}
+.captcha{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.captcha-kanjis, .captcha-input{
+    list-style: none;
+    padding: 0px;
+}
+.captcha-input{
+    display: flex;
+    justify-content: center;
+}
+#send{
+    margin-left: 7px;
+}
+.submit-button{
+    font-family: Garamond;
+    font-size: 30px;
+    width: 60%;
+    margin-top: 1em;
+}
+/* hasta acá news*/
+/* desde aca footer */
+
+footer {
+    grid-area: footer;
+    background-color: rgba(184, 156, 103, 0.9);
+    font-family: Garamond;
+    text-align: center;
+    border-top: 5px double grey;
+    margin-top: 20px;
+    padding: 2px;
+}
+.footer-button{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    padding-bottom: 2px;
+    border-bottom: 5px solid transparent;
+}
+/* hasta acá footer*/
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+header{
+    display: flex;
+}
+.socialmedia-icons{
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;   
+}
+.image-socialmedia{
+    height: 30px;
+    margin: 5px;
+    margin-top: 0px;
+    background-color: rgba(199, 171, 114, 0.7);
+    padding: 7px;
+    border-radius: 0px 0px 7px;
+    border-bottom: 10px solid rgb(199, 171, 114);
+}
+.image-socialmedia:hover{
+    transition: padding-top 0.3s;
+    padding-top: 12px;
+}
+.menu{
+    display: none;
+}
+nav{
+    display: flex;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.item{
+    transition: background-color .5s;
+}
+.link:link{
+    text-decoration: none;
+    color: rgb(109, 81, 36);
+}
+.link:active{
+    text-decoration: none;
+    color: rgb(109, 81, 36);
+}
+.link:visited{
+    text-decoration: none;
+    color: rgb(109, 81, 36);
+}
+.item:visited{
+    color: rgb(51, 51, 51);
+}
+.item:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+.basic-container, .subcontainer-miscellaneous, .news, .form-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+}
+.form-container{
+    margin: auto;
+    width: 50%;
+    flex-direction: column;
+}
+.form-titles{
+    justify-content: center;
+}
+.basic-container, .subcontainer-miscellaneous, .news1, .news2, .miscellaneous, .news3, .news4, .form-container{
+    margin-top: 8px;
+}
+.news1{
+    width: 100%;
+}
+.news2{
+    width: 58%;
+}
+.miscellaneous{
+    width: 38%;
+}
+.news3, .news4{
+    width: 48%;
+}
+.miscellaneous-title{
+    margin: 0px;
+}
+.miscellaneous-summary{
+    display: flex;
+}
+.image, .image-original{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+.image-snowdrop{
+    width: 45%;
+    margin-left: 15px;
+}
+.image-original, .image-hanko{
+    width: initial;
+}
+.title-date, h1, h2{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    color: rgb(88, 66, 30);
+}
+.center-message{
+    margin: auto;
+}
+.quote{
+    margin: 10px 80px;
+}
+.map{
+    width: 50%;
+}
+.btn-map{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+button{
+    margin: 6px 6px 0px 0px;
+}
+button:focus, #send:focus, #captcha:focus{
+    outline: none;
+    border: 2px solid rgb(158, 120, 58);
+}
+table{
+    margin: 15px auto;
+    border-spacing: 4px;
+}
+td{
+    font-size: 15px;
+    background-color: rgba(109, 81, 36, 0.8);
+}
+th, td{
+    padding: 5px 50px 5px 50px;
+}
+.form-container{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+.form-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-text{
+    width: 100%;
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+.input-radio{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.form:focus, .submit-button:active{
+    border: 2px solid rgb(179, 158, 125);
+}
+.captcha-kanjis, .captcha-input{
+    list-style: none;
+    padding: 0px;
+}
+#send{
+    margin-left: 7px;
+}
+.submit-button{
+    font-family: Garamond;
+    font-size: 30px;
+    width: 40%;
+    margin-top: 1em;
+}
+.footer-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer-button:hover{
+    transition: border-bottom .5s;
+    color: rgb(70, 70, 31);
+    border-bottom: 2px solid rgb(70, 70, 31);
+}
+}

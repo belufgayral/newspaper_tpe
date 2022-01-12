@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra Samurái - Suscripción</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>            
+        <div class="logo">
+            <a href="index.html"><img class="image-logo" src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="socialmedia-icons">
+            <img class="image-socialmedia" src="images/facebook.png" alt="Facebook">
+            <img class="image-socialmedia" src="images/instagram.png" alt="Instagram">
+            <img class="image-socialmedia" src="images/twitter.png" alt="Twitter">
+        </div>
+    </header>
+    <nav>
+        <div>
+            <p class="menu">menú</p>
+        </div>
+        <div class="buttons">
+            <a class="item btnlink" href="index.html">inicio</a>
+            <a class="item btnlink" href="mainnews.html">política</a>
+            <p class="item">guerra</p>
+            <a class="item btnlink" href="miscellaneous.html">miscelánea</a>
+            <a class="item btnlink" href="suscription.html">suscripción</a>
+        </div>
+    </nav>    
+    <section class="form-container">
+        <hgroup class="form-titles">
+            <h1>Formulario de suscripción</h1>
+            <h2>Datos personales</h2>
+        </hgroup>
+        <form class="subsform">
+            <input class="form" type="text" name="name-surname" placeholder="Nombre y apellido">
+            <input class="form" type="text" name="country" placeholder="País de residencia">
+            <input class="form" type="text" name="city" placeholder="Ciudad de residencia">
+            <input class="form" type="text" name="postal-code" placeholder="Código postal">
+            <input class="form" type="text" name="address" placeholder="Domicilio">
+            <input class="form" type="text" name="dni" placeholder="Documento de identidad">
+            <input class="form" type="email" name="dni" placeholder="Dirección de email">
+            <p class="form-text">Fecha de nacimiento</p>
+                <input class="form" type="date" name="birthdate" value="Fecha de nacimiento">
+            <p class="form-text">¿Desea recibir novedades por correo electrónico?</p>
+                <div class="input-radio">
+                    <input class="form" type="radio" name="email-news" value="news"/>Sí
+                    <input class="form" type="radio" name="email-news" value="no-news"/>No
+                </div>
+            <p class="form-text">¿Cómo conoció nuestro diario?</p>
+                <select class="form" name="census">
+                    <option hidden selected>Seleccione una opción</option>
+                    <option value="persona">A través de un amigo o conocido</option>
+                    <option value="socialmedia">Por medio de nuestras redes sociales</option>
+                    <option value="newsletter">Por medio del correo electrónico</option>
+                    <option value="advertising">Por medio de publicidades</option>
+                    <option value="others">Otros</option>
+                </select>
+        </form>
+        <div class="captcha" action="">
+            <label for="captcha"><p>Ingrese sólo uno de los valores numéricos de alguno de los siguientes kanjis:</p> 
+                <ul class="captcha-kanjis">
+                    <li>六 (6)</li>
+                    <li>七 (7)</li>
+                    <li>九 (9)</li>
+                </ul>
+            </label>
+            <ul class="captcha-input">
+                <li><input type="text" id="captcha"></li>
+                <li><input id="send" type="button" value="Enviar"></li>
+            </ul>
+        </div>
+        <div id="result"></div>
+        <input class="submit-button" type="submit" name="submit" value="Suscribirse">
+    </section>
+    <footer>
+        <div class="footer-data">
+            <p class="footer-button">Mapa del sitio</p>
+            <p class="footer-button">Ayuda</p>
+            <p class="footer-button">Términos y condiciones</p>
+            <p class="footer-button">Privacidad</p>
+            <p class="footer-button">¿Cómo anunciar?</p>
+        </div>
+            <p>Samurai War ® 2021 | Todos los derechos registrados.</p>
+    </footer>
+<script type="text/javascript" src="js/suscription.js"></script>
+</body>
+</html>
